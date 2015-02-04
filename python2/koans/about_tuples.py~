@@ -41,7 +41,7 @@ class AboutTuples(Koan):
     def test_tuples_of_one_look_peculiar(self):
         self.assertEqual(False, (1).__class__ == tuple)
         self.assertEqual(True, (1,).__class__ == tuple)
-        self.assertEqual((True, ("Hello comma!", ).__class__ == tuple)
+        self.assertEqual(("Hello comma!", ), ("Hello comma!", ))
 
     def test_tuple_constructor_can_be_surprising(self):
         self.assertEqual(__, tuple("Surprise!"))

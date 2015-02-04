@@ -88,7 +88,7 @@ world!
         hi = original
         there = "world"
         hi += there
-        self.assertEqual("Hello, ", original)
+        self.assertEqual("Helloo, ", original)
 
     def test_most_strings_interpret_escape_characters(self):
         string = "\n"
